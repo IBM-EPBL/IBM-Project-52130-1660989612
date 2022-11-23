@@ -1,7 +1,7 @@
  apiVersion: apps/v1
  kind: Deployment
  metadata:
-   name: flask-node-deployment
+   name: skillandjobrecommender
  spec:
    replicas: 1
    selector:
@@ -14,7 +14,7 @@
      spec:
        containers:
        - name: flasknode
-         image: personal-expense-app
+         image: icr.io/vignesh/skillandjob
          imagePullPolicy: Always
          ports:
          - containerPort: 5000
